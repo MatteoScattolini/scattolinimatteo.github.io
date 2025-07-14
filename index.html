@@ -7,16 +7,17 @@
 
   <body>
     <h1 id="saluto"></h1> 
-    <script> <!-- Linguaggio Javascript -->
-    const saluto = document.getElementById("saluto");
-    const ora = new Date().getHours();
-    if (ora >= 6 && ora < 12) {
-      saluto.textContent = "Buongiorno e benvenuto nel mio sito web!";
-    } else if (ora >= 12 && ora < 18) {
-      saluto.textContent = "Buon pomeriggio e benvenuto nel mio sito web!";
-    } else {
-      saluto.textContent = "Buonasera e benvenuto nel mio sito web!";
-    }
-    </script>
+      <script> <!-- Linguaggio Javascript -->
+      const saluto = document.getElementById("saluto");
+      const ora = new Date().getHours();
+      if (ora >= 5 && ora < 12) {
+        saluto.textContent = "Buongiorno e benvenuto nel mio sito web!";
+      } else if (ora >= 12 && ora < 18) {
+        saluto.textContent = "Buon pomeriggio e benvenuto nel mio sito web!";
+      } else {
+        saluto.textContent = "Buonasera e benvenuto nel mio sito web!";
+      }
+      </script> <!-- Fine linguaggio Javascript -->
+    
   </body>
 </html>
