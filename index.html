@@ -9,20 +9,18 @@
   </head>
 
   <body>
-    <div style="text-align:center;">
-      <h1 id="saluto"></h1> 
-      <script>
-      const saluto = document.getElementById("saluto");
-      const ora = new Date().getHours();
-      if (ora >= 5 && ora < 12) {
-         saluto.textContent = "BUONGIORNO E BENVENUTO NEL MIO SITO WEB!";
-      } else if (ora >= 12 && ora < 18) {
-        saluto.textContent = "BUON POMERIGGIO E BENVENUTO NEL MIO SITO WEB!";
-      } else {
-        saluto.textContent = "BUONASERA E BENVENUTO NEL MIO SITO WEB!";
-      }
-      </script>
-    </div>
+    <div id="saluto" style="text-align:center; font-size:2rem; font-weight:bold; margin:20px 0; color:#4CAF50;"></div>
+    <script>
+    const saluto = document.getElementById("saluto");
+    const ora = new Date().getHours();
+    if (ora >= 5 && ora < 12) {
+      saluto.textContent = "BUONGIORNO E BENVENUTO NEL MIO SITO WEB!";
+    } else if (ora >= 12 && ora < 18) {
+      saluto.textContent = "BUON POMERIGGIO E BENVENUTO NEL MIO SITO WEB!";
+    } else {
+      saluto.textContent = "BUONASERA E BENVENUTO NEL MIO SITO WEB!";
+    }
+    </script>
     
     <br>
     
