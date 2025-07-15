@@ -36,29 +36,27 @@
 
     <br>
     
-    <footer> <!-- Creazione del footer, nel quale inserire data e ora dell'ultima modifica + link + diritti -->
+    <footer>
       <div class="footer-container">
         <div class="social">
           <a href="https://scattolinimatteo.github.io" target="_blank"
             <i class="fab fa-github"></i>GitHub
-          </a> <!-- Link per GitHub -->
+          </a>
           <a href="https://instagram.com/matteo.scattoliniii" target="_blank">
             <i class="fab fa-instagram"></i>Instagram
-          </a> <!-- Link per Instagram -->
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjshtlFxJRwrGZPzHtwnRLDfgMRXJPHgBKphDpXFKMdVnwXfpZbCRCQfBBrlBDvrlkRsNs">
+          </a>
+          <a href="https://mail.google.com">
             <i class="fas fa-envelope"></i>Gmail
-          </a> <!-- Link per Gmail -->
+          </a>
         </div>
-        <div class="copyright">
-          &copy; 2025 Matteo Scattolini. Tutti i diritti riservati.
-        </div>
+        <div class="copyright">MIT License. Copyright &copy; 2025 Matteo</div>
         <div class="last-modified">
           Ultima modifica: <span id="last-modified"></span>
         </div>
       </div>
-    </footer> <!-- Fine del footer -->
+    </footer>
     
-    <style> <!-- Inizio dello stile CSS per il footer -->
+    <style>
     footer {
       background-color: #333;
       color: #eee;
@@ -86,9 +84,9 @@
     .social {
       margin-bottom: 10px;
     }
-    </style> <!-- Fine dello stile CSS per il footer -->
+    </style>
     
-    <script> <!--Inizio linguaggio Javascript per il footer (data e orario delle modifiche)-->
+    <script>
     const lastMod = new Date(document.lastModified);
     document.getElementById("last-modified").textContent =
       `${lastMod.toLocaleDateString()} alle ${lastMod.toLocaleTimeString()}`;
