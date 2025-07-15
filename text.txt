@@ -1,0 +1,16 @@
+Creare il sito web:
+
+Pagina principale:
+  - Menu con: 
+      - Pagina principale (index)
+      - Chi sono
+      - Progetti
+      - Portfolio
+      - Contatti
+  - Foto immagine
+  - Frase
+  - Immagini varie/altre cose
+
+Pagina "Chi sono":
+  - Menu
+  - 
