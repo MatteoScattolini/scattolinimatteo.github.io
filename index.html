@@ -52,7 +52,8 @@
       <h2><b>Perché questo sito?</b></h2>
       <p>Ciao! Sono uno studente universitario appassionato di sviluppo web, con esperienza base nei linguaggi HTML e CSS.
         In questo sito potrai scoprire qualcosa su di me: i miei progetti, il mio curriculum e molto altro!</p>
-      <p>Usa il menu in alto per navigare oppure scegli una delle sezioni qui sotto:</p>
+      <p>Usa il menu in alto per navigare <span id="aereo" style="cursor:pointer; display:inline-block; transition: all 1s; position:relative;">✈️</span> 
+        oppure scegli una delle sezioni qui sotto:</p>
       <ul style="line-height:1.6;">
         <li>Per conoscermi un po': <a href="Chi sono.html" style="color:#4CAF50;">Chi sono</a></li>
         <li>Per visionare i miei progetti: <a href="Progetti.html" style="color:#4CAF50;">Progetti</a></li>
@@ -114,5 +115,28 @@
       `${lastMod.toLocaleDateString()} alle ${lastMod.toLocaleTimeString()}`;
     </script>
 
+
+    <script>
+    const aereo = document.getElementById("aereo");
+    const menu = document.querySelector(".menu");
+    aereo.addEventListener("click", () => {
+      const menuRect = menu.getBoundingClientRect();
+      const aereoRect = aereo.getBoundingClientRect();
+      const deltaX = menuRect.left + menuRect.width/2 - (aereoRect.left + aereoRect.width/2);
+      const deltaY = menuRect.top - aereoRect.top;
+      aereo.style.transition = "transform 1s ease-in-out";
+      aereo.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.2)`;
+      setTimeout(() => {
+        aereo.style.transition = "none";
+        aereo.style.transform = "none";
+        menu.appendChild(aereo);
+      }, 1000);
+    });
+    </script>
+
+
+
+
+    
   </body>
 </html>
