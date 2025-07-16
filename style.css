@@ -26,3 +26,15 @@
 .menu a:hover {
   color: #4CAF50;
 }
+
+
+body {
+  background-image: url("immagini/sfondo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
