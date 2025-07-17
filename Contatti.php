@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="it">
   <head>
     <meta charset="UTF-8">
@@ -21,9 +20,11 @@
     </nav>
     
     <br>
-    
-    
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
       
     <footer>
       <div class="footer-container">
