@@ -18,28 +18,66 @@
         <li><div style="color:#4CAF50;"><b>Contatti</b></div></li>
       </ul>
     </nav>
-    
-    <br>
-
-
-    <form
-      action="https://formspree.io/f/xgvzvoer"
-      method="POST"
-    >
-      <label>
-        Your email:
-        <input type="email" name="email">
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
-      <button type="submit">Send</button>
-    </form>
 
     
     <br>
-      
+
+
+    <div style="
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      font-family: Arial, sans-serif;
+    ">
+      <h2 style="text-align:center; color:#222;">Contattami</h2>
+    
+      <form
+        action="https://formspree.io/f/xgvzvoer"
+        method="POST"
+        style="display:flex; flex-direction:column; gap:15px;"
+      >
+        <label>
+          Nome:
+          <input type="text" name="nome" required
+            style="width:100%; padding:8px; margin-top:4px; border:1px solid #ccc; border-radius:4px;">
+        </label>
+        <label>
+          Cognome:
+          <input type="text" name="cognome" required
+            style="width:100%; padding:8px; margin-top:4px; border:1px solid #ccc; border-radius:4px;">
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required
+            style="width:100%; padding:8px; margin-top:4px; border:1px solid #ccc; border-radius:4px;">
+        </label>
+        <label>
+          Messaggio:
+          <textarea name="message" rows="5" required
+            style="width:100%; padding:8px; margin-top:4px; border:1px solid #ccc; border-radius:4px;"></textarea>
+        </label>
+        <button type="submit" style="
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        ">
+          Invia
+        </button>
+      </form>
+    </div>
+
+    
+    <br>
+
+    
     <footer>
       <div class="footer-container">
         <div class="social">
