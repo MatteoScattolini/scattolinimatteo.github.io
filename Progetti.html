@@ -1,1 +1,130 @@
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetti</title>
+    <link rel="icon" href="immagini/favicon.png" type="image/png"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Chi sono.html">Chi sono</a></li>
+        <li><div style="color:#4CAF50;"><b>Progetti</b></div></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+
+
+    <a href="https://revolut.me/teo_scatto" target="_blank" style="
+      position:fixed;
+      top:20px;
+      right:20px;
+      width:60px;
+      height:60px;
+      background-color:#4CAF50;
+      color:white;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 0 10px rgba(0,0,0,0.4);
+      text-decoration:none;
+      font-size:24px;
+      z-index:9999;
+      transition:transform 0.2s ease;
+    " 
+      onmouseover="this.style.transform='scale(1.1)'" 
+      onmouseout="this.style.transform='scale(1)'"
+      title="Offrimi un caffè"
+    >
+      <img src="immagini/caffè.png" alt="caffè" style="width:75%; height:75%;">
+    </a>
+    
+
+    <h1 style="
+      text-align: center;
+      font-size: 2.5rem;
+      color: #4CAF50;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+    ">I miei progetti</h1>
+
+
+    <p style="
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      padding: 0 10px;
+    ">
+      Ecco i miei progetti!
+    </p>
+
+    
+    <br>
+
+    
+    <footer>
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://scattolinimatteo.github.io" target="_blank"> <i class="fa-brands fa-github"></i> GitHub </a>
+          <a href="https://instagram.com/matteo.scattoliniii" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram </a>
+          <a href="mailto:scattolinimatteo06@gmail.com"> <i class="fa-solid fa-envelope"></i> Gmail </a>
+        </div>
+        <div class="last-modified"> Ultima modifica: <span id="last-modified"></span> </div>
+        <br>
+        <div class="copyright">MIT License. Copyright &copy; 2025 Matteo.</div>
+        <br>
+        <div class="accredit">Background image: <a href="http://www.freepik.com">Designed by kjpargeter / Freepik</a></div>
+      </div>
+    </footer>
+    
+    <style>
+    footer {
+      background-color: #333;
+      color: #eee;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+    
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .social {
+      margin-bottom: 10px;
+    }
+    </style>
+    
+    <script>
+    const lastMod = new Date(document.lastModified);
+    document.getElementById("last-modified").textContent =
+      `${lastMod.toLocaleDateString()} alle ${lastMod.toLocaleTimeString()}`;
+    </script>
+
+
+  </body>
+</html>
 
